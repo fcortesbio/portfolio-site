@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Andrés</title>
+    <meta name="description" content="Backend development projects showcasing APIs, databases, and system architecture.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Fabián Andrés Cortés</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Projects</h1>
+                <p>A collection of backend systems, APIs, and tools I've built to solve real-world problems.</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <article class="project-card featured">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2>Pokédex RESTful API</h2>
+                                <span class="project-status">Production</span>
+                            </div>
+                            <p>A comprehensive RESTful API for Pokémon data with full CRUD operations, JWT authentication, rate limiting, and comprehensive error handling. Features include user management, favorites system, and detailed API documentation.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>Key Features</h4>
+                                    <ul>
+                                        <li>JWT-based authentication system</li>
+                                        <li>Rate limiting and CORS configuration</li>
+                                        <li>MongoDB with Mongoose ODM</li>
+                                        <li>Comprehensive input validation</li>
+                                        <li>Swagger API documentation</li>
+                                        <li>Docker containerization</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>Technical Challenge</h4>
+                                    <p>Implemented efficient caching strategies and database indexing to handle high-volume requests while maintaining data consistency and security.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Mongoose</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Swagger</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">GitHub Repository</a>
+                                <a href="#" class="project-link">Live API</a>
+                                <a href="#" class="project-link">API Documentation</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Prompt Generator System</h3>
+                                <span class="project-status">Active</span>
+                            </div>
+                            <p>Google Apps Script backend integrated with a responsive frontend for dynamic content generation. Features intelligent caching, API optimization, and seamless user experience.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>Role & Challenge</h4>
+                                    <p>Built the entire backend logic and API integration, optimizing for performance and implementing smart caching to reduce API calls by 70%.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Google Apps Script</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                                <span class="tech-tag">Caching</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">GitHub</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Task Management API</h3>
+                                <span class="project-status">Development</span>
+                            </div>
+                            <p>Dockerized microservice with comprehensive testing suite, CI/CD pipeline, and detailed API documentation. Demonstrates best practices in backend architecture.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>Key Features</h4>
+                                    <ul>
+                                        <li>Microservice architecture</li>
+                                        <li>Unit and integration testing</li>
+                                        <li>CI/CD with GitHub Actions</li>
+                                        <li>Docker containerization</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">Jest</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                                <span class="tech-tag">MariaDB</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">GitHub</a>
+                                <a href="#" class="project-link">API Docs</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Inventory Management System</h3>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <p>Full-stack inventory system with real-time updates, barcode scanning integration, and comprehensive reporting. Built for small business operations.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>Technical Challenge</h4>
+                                    <p>Implemented real-time inventory tracking with WebSocket connections and optimized database queries for large datasets.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Sequelize</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">GitHub</a>
+                                <a href="#" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Authentication Microservice</h3>
+                                <span class="project-status">Open Source</span>
+                            </div>
+                            <p>Reusable authentication service with JWT tokens, refresh token rotation, and comprehensive security features. Designed for microservice architectures.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>Security Features</h4>
+                                    <ul>
+                                        <li>JWT with refresh token rotation</li>
+                                        <li>Rate limiting and brute force protection</li>
+                                        <li>Password hashing with bcrypt</li>
+                                        <li>Email verification system</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">bcrypt</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">GitHub</a>
+                                <a href="#" class="project-link">Documentation</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Andrés. Built with vanilla HTML, CSS, and JavaScript.</p>
+                <div class="footer-links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
