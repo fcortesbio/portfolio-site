@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés - Backend Developer</title>
+    <meta name="description" content="Backend Developer specializing in Node.js, APIs, and system architecture. Passionate about clean code and scalable solutions.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Andrés</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Backend Developer</h1>
+                    <p class="hero-subtitle">Building scalable APIs and robust systems with clean, maintainable code</p>
+                    <p class="hero-description">
+                        Passionate about server-side architecture, database optimization, and creating efficient solutions 
+                        that power modern applications. From biology to backend development, I bring analytical thinking 
+                        and problem-solving skills to every project.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>Languages</h3>
+                        <div class="tech-badges">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">SQL</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Backend</h3>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express.js</span>
+                            <span class="tech-badge">RESTful APIs</span>
+                            <span class="tech-badge">JWT Auth</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Databases</h3>
+                        <div class="tech-badges">
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">MariaDB</span>
+                            <span class="tech-badge">Mongoose</span>
+                            <span class="tech-badge">Sequelize</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Tools & DevOps</h3>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">Vim</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Pokédex API</h3>
+                            <p>RESTful API with full CRUD operations, JWT authentication, and rate limiting. Built with Node.js, Express, and MongoDB.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Prompt Generator System</h3>
+                            <p>Google Apps Script backend integrated with frontend for dynamic content generation. Features caching and API optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Google Apps Script</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10,9 9,9 8,9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management API</h3>
+                            <p>Dockerized microservice with comprehensive testing, CI/CD pipeline, and detailed API documentation using Swagger.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">Jest</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">API Docs</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <a href="projects.html" class="btn btn-outline">View All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Andrés. Built with vanilla HTML, CSS, and JavaScript.</p>
+                <div class="footer-links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
